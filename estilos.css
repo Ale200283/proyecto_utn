@@ -1,0 +1,129 @@
+/*------------header ------------*/
+ /*html{
+    font-size: 10px;
+} esto es para que el html tome como referencia lo  que nosotros queramos 
+si no por defecto viene con 16 pixeles*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+  
+.header{
+    background-color: rgb(214, 188, 188);
+    height: 25rem;
+    background-image: url(img/batman0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.menusuperior{
+    list-style-type: none;
+    text-align: center;
+    
+    
+}
+.menusuperior li {
+display: inline-block;
+}
+.menusuperior a {
+color: rgb(199, 47, 47);
+text-decoration: none;
+font-weight: 500;
+font-size: 1.3rem;
+padding: 1.3rem;
+}
+.titulo{
+    color: rgb(14, 14, 138);
+    font-size: 5rem;
+    text-align: center;
+/*padding: 150px;*/
+font-family:'Ibarra Real Nova';
+}
+.contenido{
+    background: linear-gradient(rgb(160, 156, 156), black);
+    padding: 2rem;
+    width: 50%;
+    /*float: left;*/
+    height: 90vh;
+}
+
+.box{
+    display: flex;
+    align-items: flex-start;
+    
+    
+}
+
+
+.personajes__imagenes{
+    background-color: rgb(27, 31, 33);
+    width: 60%;
+    
+}
+.personajes__imagenes img{
+    width: 100%;
+    border-radius: 10px; 
+}
+
+.filmografia{
+    background: linear-gradient(rgb(121, 53, 53), rgb(59, 24, 59));
+    width: 50%;
+    padding: 2rem;
+   /*float: right;*/
+    height: 90vh;
+    color:gainsboro;
+    
+}
+.footer{
+    background: linear-gradient(rgb(23, 142, 23), rgb(34, 33, 33));
+    clear: both;
+    height: 30vh;
+}
+
+.foother__btn{
+margin: 1rem;
+padding-left: 1rem;
+padding-right: 1rem;
+padding: 0.8rem;
+background-color: rgb(49, 47, 47);
+color: white;
+font-size: 0.9rem;
+text-transform: uppercase;
+border: rgb(5, 9, 86);
+box-shadow: 5px 5px 2px rgb(98, 92, 92);
+cursor: pointer;
+}
+
+@media(min-width:768px){
+
+    .footer{
+        background: linear-gradient(red, black);
+    }
+
+    .filmografia{
+        color: rgb(251, 158, 36);
+    }
+}
+
+@media(min-width:992px){
+
+    .contenido{
+        background: linear-gradient(violet, blue);
+        font-size: 1,5rem;
+    }
+
+    .filmografia{
+        font-size: 2rem;
+    }
+}
+
+/* hay difrente tipos de selectores los html clases y id.
+lo ideal es trabajar con clases por que nos va a permitir trabajar,
+con una misma clase en varios objetos .
+los id son unicos para cada objeto el id tiene mas relevancia que la clase
+la clase tiene mas relevancia que el selector html,
+*/
